@@ -25,7 +25,8 @@ module Ace
     var editor = ace.edit('#{id}');
     #{theme_setter}
     var #{mode_class} = require("ace/mode/#{mode}").Mode;
-    editor.getSession().setMode(new #{mode_class}());
+    #editor.getSession().setMode(new #{mode_class}());
+    editor.getSession().setMode(#{mode})
     editor.getSession().setUseSoftTabs(false);
     editor.getSession().setShowPrintMargin(false);
     editor.getSession().setShowInvisibles(true);
