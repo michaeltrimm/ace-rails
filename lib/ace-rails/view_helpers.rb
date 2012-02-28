@@ -7,7 +7,7 @@ module Ace
           mode  = options[:mode] || 'css'
           theme = options[:theme] # nil => default theme
 
-          mode_class = "#{mode}_mode".camelize
+          mode_class = "#{mode}_mode" #.camelize
 
           theme_script_tag = theme ? "<script type='text/javascript' src='/javascripts/ace/theme-#{theme}.js' charset='utf-8' ></script>" : ""
           theme_setter = theme ? "editor.setTheme('ace/theme/#{theme}');" : ""
