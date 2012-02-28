@@ -6,9 +6,9 @@ Gem::Specification.new do |s|
   s.name        = "ace-rails"
   s.version     = Ace::Rails::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["Florian Günther"]
-  s.email       = ["mail@gee-f.de"]
-  s.homepage    = "https://github.com/florianguenther/ace-rails"
+  s.authors     = ["Florian Günther","Michael Trimm"]
+  s.email       = ["mail@gee-f.de","michaeltrimm@gmail.com"]
+  s.homepage    = "https://github.com/michaeltrimm/ace-rails"
   s.summary     = "Use ace (Ajax.org Cloud9 Editor) within your Rails 3 projects"
   s.description = "This gem provides a generator to download and install ace (Ajax.org Cloud9 Editor) into your Rails 3 project. It also provides some view helper to setup an editor."
 
