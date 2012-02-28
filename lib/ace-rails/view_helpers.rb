@@ -7,7 +7,7 @@ module Ace
           mode  = options[:mode] || 'css'
           theme = options[:theme] # nil => default theme
 
-          mode_class = "#{mode}_mode" #.camelize
+          mode_class = "#{mode}_mode" # .camelize
 
           theme_script_tag = theme ? "<script type='text/javascript' src='/javascripts/ace/theme-#{theme}.js' charset='utf-8' ></script>" : ""
           theme_setter = theme ? "editor.setTheme('ace/theme/#{theme}');" : ""
@@ -25,7 +25,6 @@ module Ace
     var editor = ace.edit('#{id}');
     #{theme_setter}
     var #{mode_class} = require("ace/mode/#{mode}").Mode;
-    #editor.getSession().setMode(new #{mode_class}());
     editor.getSession().setMode(#{mode})
     editor.getSession().setUseSoftTabs(false);
     editor.getSession().setShowPrintMargin(false);
